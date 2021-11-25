@@ -14,18 +14,23 @@ ncsPPT
 <div id="box" class="box"><div id="border" class="border">
 
 <!---------------------- Main --------------------->
-<h1> Password Encryptor </h1>
+<h1> Password Generator </h1>
 <!---------------------- Input --------------------->
 <label>Password</label>
 <br><input type="text" id="myText" value="-MyPass-" class="input_yellow"></br>
 <label>Code Seed</label>
 <br><input type="text" id="myCode" value="sp3078" class="input_yellow"></br>
-<br><br><input type="checkbox" id="myCheck"><label> Use special characters </label></br></br>
+<br>
+<div id="check_boxes">
+<input type="checkbox" id="myCheck" class="checkit"><label> -Use special chars </label>
+<input type="checkbox" id="use_old_ncp" class="checkit" onclick="check_box_switch_version(this)"><label> -ncsPPT7 </label>
+</div>
+</br>
 
 <!---------------------- Output --------------------->
 <br><input type="text" id="myOut" value="-copy output text here -" onclick="copy_this_text(this)">
 
-<button onclick="runApp()">Encrypt</button></br>
+<button onclick="runApp()" id="run_app">Encrypt</button></br>
 <br><div id="show_text"></div></br>
 
 
@@ -33,7 +38,7 @@ ncsPPT
 </center>
 <!---------------------- End --------------------->
 </div></div>
-
 <script src="script/main.js"></script>
+<script src="script/old_ncrypt.js"></script>
 </body>
 </html>
