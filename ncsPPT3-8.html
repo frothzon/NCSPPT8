@@ -4,139 +4,35 @@
 <title>
 ncsPPT
 </title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
+<link rel="stylesheet" href="script/style.css" />
 <body>
 
+<!---------------------- Box --------------------->
+<body><div id="doc">
+<div id="box" class="box"><div id="border" class="border">
 
-<style>
-div
-{
-background: 
-  /* On "top" */
-  repeating-linear-gradient(
-    46.5deg,
-    transparent,
-    transparent 8px,
-    #fff 10px,
-    #fcba03 20px
-  ),
-  /* on "bottom" */
-  linear-gradient(
-    to bottom,
-    #e3fc03,
-    #fff,
-    #e3fc03
-  );
-  
-  
-color: red;
--webkit-text-stroke: 0 black;
-text-shadow:
-       1px 1px 1px #000;
-}
-td
-{
-color: white;
--webkit-text-stroke: .5px black;
-text-shadow:
-       2px 2px 0 #000;
-}
-body
-{
-background: 
-  /* On "top" */
-  repeating-linear-gradient(
-    46.5deg,
-    transparent,
-    transparent 12px,
-    #ba772b 10px,
-    #ccc 20px
-  ),
-  /* on "bottom" */
-  linear-gradient(
-    to bottom,
-    #ffbb00,
-    #fff,
-    #ffbb00
-  );
- font-family: Tahoma, Geneva, sans-serif;
-}
-table{
-background: 
-  /* On "top" */
-  repeating-linear-gradient(
-    46.5deg,
-    transparent,
-    transparent 14px,
-    #ba772b 10px,
-    #c99400 20px
-  ),
-  /* on "bottom" */
-  linear-gradient(
-    to bottom,
-    #c99400,
-    #694d00,
-    #c99400
-  );
- border-style:outset;
- 
-}
-</style>
+<!---------------------- Main --------------------->
+<h1> Password Generator </h1>
+<!---------------------- Input --------------------->
+<label>Password</label>
+<br><input type="text" id="myText" value="-MyPass-" class="input_yellow"></br>
+<label>Code Seed</label>
+<br><input type="text" id="myCode" value="sp3078" class="input_yellow"></br>
+<br><br><input type="checkbox" id="myCheck"><label> Use special characters </label></br></br>
 
-<center>
-<br>
-<br>
-<table border="5" bordercolor="black" bgcolor=#4d94ff><td>
-<h1>
-<center>
-Password Generator
+<!---------------------- Output --------------------->
+<br><input type="text" id="myOut" value="-copy output text here -" onclick="copy_this_text(this)">
+
+<button onclick="runApp()">Encrypt</button></br>
+
+
+
 </center>
-</h1>
-<br>
-<br>
+<!---------------------- End --------------------->
+</div></div>
 
-<table border="3" bordercolor="black" bgcolor=#0066ff>
-
-<th>Password</th>
-<th>Code Seed</th>
-</tr>
-<tr>
-<td><input type="text" id="myText" value="-MyPass-"></td>
-<td><input type="text" id="myCode" value="sp3078"></td>
-
-</table>
-<br>
-<center>
-<table border="1" bordercolor="red" bgcolor=#fff2e6>
-
-<td><div>
-Use special characters
-</td></div>
-<th>
- <input type="checkbox" id="myCheck">
- </th>
- 
-</tr>
-<tr>
-
-</center></table><br><br>
-
-<input type="text" id="myOut" value="-copy output text here -">
-
-
-<h3>Click to Encode</h3>
-
-<button onclick="runApp()">Encrypt</button>
-
-<br>
-<br>
-</td></table>
-</center>
-
-
-
-<script type="text/javascript" src="data.js"></script>
-
-
+<script src="script/main.js"></script>
 </body>
 </html>
