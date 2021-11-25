@@ -69,7 +69,7 @@ input{
 }
 
 
-#myCheck {
+.checkit {
 	width: 25px;
 	height: 25px;
 }
@@ -100,4 +100,12 @@ button{
 button:hover{
 	background: #333333;
 	color: #ffffff;
+}
+
+#check_boxes {
+	margin: auto;
+	width: 50%;
+	background-color:rgba(0,0,0,0.25);
+	border-radius: 8px;
+	width: 280px;
 }
